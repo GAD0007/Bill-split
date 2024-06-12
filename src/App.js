@@ -3,19 +3,19 @@ import "./App.css";
 const initialFriends = [
   {
     id: 118836,
-    name: "Clark",
+    name: "Temilade",
     image: "https://i.pravatar.cc/48?u=118836",
-    balance: -7,
+    balance: -10,
   },
   {
     id: 933372,
-    name: "Sarah",
+    name: "Emako",
     image: "https://i.pravatar.cc/48?u=933372",
-    balance: 20,
+    balance: 40,
   },
   {
     id: 499476,
-    name: "Anthony",
+    name: "Williams",
     image: "https://i.pravatar.cc/48?u=499476",
     balance: 0,
   },
@@ -178,18 +178,20 @@ function FormAddFriend({ isOpen, onAddFriend }) {
           <label>friend Name</label>
           <input
             type="text"
+            className="inputFields"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
 
           <label>Image Url</label>
           <input
+            className="inputFields"
             type="text"
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
 
-          <Button>Add</Button>
+          <Button  >Add</Button>
         </form>
       )}
     </>
@@ -217,6 +219,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
       <input
         type="text"
         value={bill}
+        className="inputFields"
         onChange={(e) => SetBill(Number(e.target.value))}
       />
 
@@ -224,6 +227,8 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
       <input
         type="text"
         value={paidUser}
+        className="inputFields"
+
         onChange={(e) =>
           setPaidUser(
             Number(e.target.value) > bill ? paidUser : Number(e.target.value)
@@ -232,11 +237,14 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
       />
 
       <label>{selectedFriend.name}'s Expense</label>
-      <input type="text" value={paidByFriend} disabled />
+      <input type="text" 
+        className="inputFields"
+      value={paidByFriend} disabled />
 
       <label>Who is paying the bill?</label>
       <select
         value={whoIsPaying}
+        className="inputFields"
         onChange={(e) => setWhoIsPaying(e.target.value)}
       >
         <option value="user">you</option>

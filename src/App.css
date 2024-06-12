@@ -41,7 +41,101 @@
   align-items: start;
   /* justify-content: center; */
 }
+@media screen and (max-width: 500px) {
+  form h2 {
+    grid-column: 1 / -1;
+    font-size: 1.5rem !important;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.3rem !important;
+  }
+  .form-add-friend {
+    grid-template-columns: 1fr 1.5fr;
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+
+    padding: 0.5rem !important;
+    background-color: #d3f7a5;
+  }
+  .btn-add{
+    width: 50% ;
+  }
+  form {
+    font-size: 1.6rem;
+    display: grid;
+    align-items: center;
+    gap: 0.5rem !important;
+  
+    background-color: var(--color-lightest);
+    border-radius: 7px;
+  }
+  label {
+    font-weight: 500 !important;
+    /* font-size: 10px !important; */
+  }
+  .sidebar li {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto !important;
+    align-items: center;
+    column-gap: 0rem !important;
+    height: fit-content;
+  
+    padding: 0rem 1.2rem !important;
+    border-radius: 7px;
+    transition: 0.5s;
+  }
+  .avatar{
+    margin-right: 10px !important;
+  }
+
+.sidebar li img {
+  border-radius: 50%;
+  width: 60% !important;
+  grid-row: span 2;
+}
+
+.sidebar ul {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.4rem; */
+  font-size: 1em !important;
+  margin-bottom: 1rem !important;
+}
+.inputFields{
+  width: 90% !important;
+  height: 10px !important;
+  font-size: 15px;
+}
+.form-split-bill {
+  grid-template-columns: 1fr 8rem;
+  padding: 0rem 1em !important;
+  background-color: #d3f7a5;
+  margin-top: 20px;
+
+}
+/* .h2{
+  font-size: medium
+  ;
+} */
+}
+
 @media screen and (max-width: 981px) {
+
+  form {
+    font-size: 1.3rem !important;
+    display: grid;
+    align-items: center;
+    /* gap: 0rem !important; */
+  
+    background-color: var(--color-lightest);
+    border-radius: 7px;
+  }
+  .inputFields{
+    width: 90% !important;
+    height: 20px;
+  }
   .app {
     min-height: 66vh;
     display: grid;
@@ -122,7 +216,7 @@
 
 }
 .sidebar li:hover {
-  background-color:rgb(245, 228, 172);
+  /* background-color:rgb(245, 228, 172); */
 }
 
 .sidebar li img {
