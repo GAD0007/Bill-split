@@ -108,11 +108,18 @@
   height: 10px !important;
   font-size: 15px;
 }
+.inputFields2{
+  width: 90% !important;
+  height: 30px !important;
+  font-size: 15px;
+}
 .form-split-bill {
   grid-template-columns: 1fr 8rem;
-  padding: 0rem 1em !important;
+  padding: 1rem 1em !important;
   background-color: #d3f7a5;
   margin-top: 20px;
+  /* margin-bottom: 20px !important; */
+
 
 }
 /* .h2{
